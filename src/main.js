@@ -9,12 +9,13 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import VueRouter from 'vue-router'
 import Trivia from './components/AppTrivia'
+import { store } from './store/store'
 
 Vue.config.productionTip = false
 
 Vue.use(Bootstrap);
 Vue.use(BootstrapVue);
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   { path: '/', redirect: 'trivia' },
@@ -28,5 +29,6 @@ const router = new VueRouter({
 
 new Vue({
   router,
+  store,
   render: h => h(App),
 }).$mount('#app')
