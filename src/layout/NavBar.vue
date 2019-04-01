@@ -7,6 +7,11 @@
                         <router-link :to="{ name: 'trivia' }">Trivia</router-link>
                     </div>
                 </li>
+                <li class="nav-item active">
+                    <div class="navbar-brand">
+                        <router-link :to="{ name: 'chuck' }">Chuck</router-link>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>
